@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Animation On Scroll</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+	<style>
+		
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-size: 30px;
+			font-family: sans-serif;
+			background: #ebebeb;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			flex-direction: column;
+		}
+
+		.div {
+			box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+			height: 300px;
+			width: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(to right, #1cd8d2, #93edc7);
+			color: #fff;
+			margin: 100px 0;
+			border-radius: 7px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="div" data-aos="zoom-in" data-aos-delay="9000"> 
+			Div 1
+		</div>
+
+		<div class="div" data-aos="fade-left" data-aos-delay="9000">
+			Div 2
+		</div>
+
+		<div class="div" data-aos="fade-right" data-aos-delay="9000">
+			Div 3
+		</div>		
+
+		<div class="div" data-aos="fade-up" data-aos-delay="9000">
+			Div 4
+		</div>
+
+		<div class="div" data-aos="fade-down" data-aos-delay="9000">
+			Div 5
+		</div>
+
+		<div class="div" data-aos="zoom-out" data-aos-delay="9000">
+			Div 6
+		</div>
+
+	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 2000,
+		});
+		// console.log('%c Harman', 'color: red; font-size: 1rem'); // For Practise
+	</script>
+	
+</body>
+</html>
